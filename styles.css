@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Layout with Float */
+.content {
+    padding: 20px;
+}
+
+.column {
+    width: 45%;
+    padding: 15px;
+    margin: 20px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.column:hover {
+    transform: scale(1.05);
+}
+
+.left {
+    background: linear-gradient(to bottom right, #76b852, #8DC26F);
+}
+
+.right {
+    background: linear-gradient(to bottom right, #3498db, #2ecc71);
+}
+
+/* Clearfix Technique */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Lists, Tables, and Additional Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+}
+
+/* Gradient and Blur */
+header {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    filter: blur(0px);
+}
+
+header:hover {
+    filter: blur(2px);
+}
+
+/* Shadow */
+footer {
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
